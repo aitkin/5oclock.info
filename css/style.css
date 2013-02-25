@@ -1,0 +1,86 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+    font-size: 30px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    margin: 1em auto;
+    max-width: 580px;
+}
+
+h1 {
+    font-size: 1.55em;
+}
+
+span {
+    margin-right: 1em;
+    font-size: .8em;
+    max-width: 100%;
+}
+
+.about_content {
+    font-size: .6em;
+    max-width: 100%;
+}
+
+hr {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+}
+
+.about_heading {
+    cursor: pointer;
+    color: #666666;
+}
+
+.about_heading:hover{
+    color: #000000;
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: #999999
+}
+a:hover {
+    text-decoration: none;
+    color: #000000
+}
+
+a.dark_link:link {color: #666666;}
+a.dark_link:active {color: #666666;}
+a.dark_link:visited {color: #666666;}
+a.dark_link:hover {color: #000000;}
+
+
+@media only screen and (max-width: 610px), only screen and (max-device-width: 480px){
+    body {
+        font-size: 25px;
+        max-width: 300px;
+    }
+
+    span {
+        font-size: .7em;
+    }
+
+    .about_content {
+        font-size: .5em;
+    }
+
+    hr {
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 480px){
+    body {
+        font-size: 48px;
+        max-width: 700px;
+    }
+
+    h1 {
+        font-weight: normal;
+    }
+     
+}
